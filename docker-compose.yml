@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: .
+    command: node index.js
+    volumes:
+      - /usr/src/app/node_modules
+    ports:
+      - 1337:1337

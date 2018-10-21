@@ -5,3 +5,6 @@
 
 [ ] Typescript
 [ ] Typescript + Docker
+
+[ ] Chrome
+[ ] VS Code
