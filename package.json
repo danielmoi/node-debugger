@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "watchexec -e js,ts -r node index.js"
+    "start": "watchexec -e js,ts -r node index.js",
+    "inspect": "watchexec -e js,ts -r node -- --inspect index.js"
   },
   "author": "",
   "license": "ISC",
