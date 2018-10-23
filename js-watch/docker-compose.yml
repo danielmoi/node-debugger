@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: .
+    command: watchexec -e js,ts -r yarn start
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 1337:1337
+  inspect:
+    extends: app
+
+    command: watchexec -e js,ts -r node -- --inspect-brk=0.0.0.0 index.js
+    ports:
+      - 1337:1337
+      - 9229:9229

@@ -51,6 +51,22 @@
 
 ------------------------------------------------------------
 ## 2. Node + Docker
+- Create a separate service "inspect" definition in the `docker-compose.yml`
+- put the commands on separate lines
+-
+
+### 2.1 Chrome
+- Start server `docker-compose up inspect`
+- Open Chrome Dev Tools
+- Click resume
+- Set a breakpoint
+- `curl localhost:1337`
+- App will have stopped
+
+### 2.2 VS Code
+As per the plain JS steps
+May need to set breakpoints first, before starting server (to
+avoid the invalid breakpoint error; valid breakpoints are red)
 
 ------------------------------------------------------------
 ## 3. Typescript
@@ -62,3 +78,4 @@
 ------------------------------------------------------------
 ## References
 https://scotch.io/tutorials/debugging-node-code-in-vs-code
+https://blog.risingstack.com/how-to-debug-a-node-js-app-in-a-docker-container/
